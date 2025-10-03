@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Energy Facts & Misconceptions</title>
+<style>
+/* General Styles */
+body {
+font-family: 'Verdana', sans-serif;
+margin: 0;
+padding: 0;
+background-color: #c1d7b0;
+color: #333;
+text-align: center;
+}
+/* Header */
+header {
+padding: 60px 20px 30px 20px;
+background-color: #a3c48b;
+color: #fff;
+}
+h1 {
+font-size: 2.5rem;
+margin-bottom: 10px;
+animation: fadeIn 2s ease forwards;
+}
+/* Fade-in animation */
+@keyframes fadeIn {
+from { opacity: 0; transform: translateY(-20px); }
+to { opacity: 1; transform: translateY(0); }
+}
+/* Navigation Bar */
+nav {
+display: flex;
+justify-content: center;
+gap: 15px;
+flex-wrap: wrap;
+background-color: #9bbc7a;
+padding: 12px 0;
+position: sticky
+top: 0;
+z-index: 100;
+}
+nav a {
+text-decoration: none;
+color: #fff;
+font-weight: bold;
+padding: 6px 12px;
+border-radius: 5px;
+transition: 0.3s;
+}
+nav a:hover {
+background-color: #7db46c;
+}
+/* Sections */
+section {
+max-width: 900px;
+margin: 30px auto;
+padding: 25px;
+background: #fff;
+border-radius: 12px;
+box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+h2 {
+color: #2c3e50;
+margin-bottom: 20px;
+animation: fadeIn 2s ease forwards;
+}
+/* Team List & Sources */
+.team-members ul, .sources ul {
+list-style: square;
+padding-left: 20px;
+text-align: left;
+display: inline-block;
+}
+/* Entry Cards */
+.entry {
+background-color: #e5f0d6;
+padding: 20px;
+margin-bottom: 20px;
+border-radius: 10px;
+transition: transform 0.3s, box-shadow 0.3s;
+}
+.entry:hover {
+transform: translateY(-5px);
+box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+.entry h3 { margin-top: 0; }
+.entry p { margin: 8px 0; }
+/* Buttons */
+a.download-btn, button {
+background-color: #7db46c;
+color: #fff;
+padding: 12px 22px;
+border-radius: 8px;
+text-decoration: none;
+display: inline-block;
+border: none;
+cursor: pointer;
+transition: 0.3s;
+}
+a.download-btn:hover, button:hover {
+background-color: #5e944e;
+}
+/* Video iframe */
+iframe {
+width: 100%;
+height: 350px;
+border: none;
+margin-top: 10px;
+border-radius: 8px;
+}
+/* Responsive */
+@media (max-width: 768px) {
+header { padding: 50px 10px 20px 10px; }
+nav { gap: 10px; }
+.entry { padding: 15px; }
+iframe { height: 250px; }
+}
+</style>
+</head>
+<body>
+<header>
+<h1>Energy Facts & Misconceptions</h1>
+<p>Welcome to our STEM project website!</p>
+</header>
+<nav>
+<a href="#team">Team</a>
+<a href="#entries">Entries</a>
+<a href="#reflection">Reflection</a>
+<a href="#video">Video</a>
+<a href="#download">Download</a>
+<a href="#sources">Sources</a>
+</nav>
+<section id="team">
+<h2>Group 1 Members</h2>
+<ul>
+<li>PAEZ, KIAN ZACHARY GRANDE (LEADER)</li>
+<li>PATRICIO, YONI BIELITH SAN JOSE</li>
+<li>EDANG, CHRIZZIA ANN DIOSANA</li>
+<li>BROÑOSA, EDRIAN ESPAÑOLA</li>
+<li>ALDABA, NIKKO JOFFERSON SAAD</li>
+<li>COFREROS, CHRISTIAN RICH AGUILAR</li>
+<li>LABATIGAN, KALEAH JAZZELLE GALAN</li>
+<li>PANCRUDO, NICOLE FIRMEZA</li>
+<li>PEDROSO JR., BONIFACIO CALISTON</li>
+</ul>
+</section>
+<section id="entries">
+<h2>Energy Entries</h2>
+<!-- Solar Energy -->
+<div class="entry">
+<h3>Solar Energy</h3>
+<p><strong>Statement:</strong> Using tilted solar panels can maximize sunlight absorption
+and energy production even without tilting it.</p>
+<p><strong>Logical Proposition:</strong> If the panels are tilted, it can maximize solar
+energy production.</p>
+<p><strong>P and Q:</strong> P = panels are tilted, Q = maximize energy production</p>
+<p><strong>Truth Value:</strong> True</p>
+<p><strong>Scientific Explanation:</strong> Solar panels convert sunlight into electricity
+through photovoltaic cells. Tilting increases efficiency by aligning with the sun’s path. Flat panels
+get optimal light for shorter periods.</p>
+</div>
+<!-- Wind Energy -->
+<div class="entry">
+<h3>Wind Energy</h3>
+<p><strong>Statement:</strong> Wind turbines can still make electricity even if there is no
+wind.</p>
+<p><strong>Logical Proposition:</strong> If there is no wind, then the turbine can still
+produce electricity.</p>
+<p><strong>P and Q:</strong> P = there is no wind, Q = turbine produces electricity</p>
+<p><strong>Truth Value:</strong> False</p>
+<p><strong>Scientific Explanation:</strong> Wind turbines rely on air movement to turn
+blades. Without wind, blades won’t move and no electricity is produced.</p>
+</div>
+<!-- Hydropower Energy -->
+<div class="entry">
+<h3>Hydropower Energy</h3>
+<p><strong>Statement:</strong> Hydroelectric power converts flowing water energy into
+electricity.</p>
+<p><strong>Logical Proposition:</strong> If there is flowing water, then hydroelectric power
+can be generated.</p>
+<p><strong>P and Q:</strong> P = there is flowing water, Q = hydroelectric power is
+generated</p>
+<p><strong>Truth Value:</strong> True</p>
+<p><strong>Scientific Explanation:</strong> Hydropower plants use kinetic energy of moving
+water to spin turbines connected to generators. The water cycle constantly renews the water
+supply, making hydroelectricity renewable.</p>
+</div>
+<!-- Geothermal Energy -->
+<div class="entry">
+<h3>Geothermal Energy</h3>
+<p><strong>Statement:</strong> Geothermal energy can effectively be used to heat and cool
+buildings by using the stable temperature of the Earth's subsurface.</p>
+<p><strong>Logical Proposition:</strong> Geothermal energy is effective for heating and
+cooling buildings if and only if the subsurface temperature is stable.</p>
+<p><strong>P and Q:</strong> P = geothermal energy is effective for heating and cooling
+buildings, Q = subsurface earth temperature is stable</p>
+<p><strong>Truth Value:</strong> True</p>
+<p><strong>Scientific Explanation:</strong> Geothermal systems use stable underground
+temperatures. Heat pumps transfer heat to the ground in summer and bring heat up in winter,
+making heating and cooling efficient year-round.</p>
+</div>
+<!-- Nuclear Energy -->
+<div class="entry">
+<h3>Nuclear Energy</h3>
+<p><strong>Statement:</strong> Nuclear energy is the cleanest energy source because it
+produces almost no greenhouse gas emissions.</p>
+<p><strong>Logical Proposition:</strong> If electricity is generated by nuclear fission, then it
+is one of the cleanest energy sources.</p>
+<p><strong>P and Q:</strong> P = electricity is generated by nuclear fission, Q = one of the
+cleanest energy sources</p>
+<p><strong>Truth Value:</strong> True</p>
+<p><strong>Scientific Explanation:</strong> Nuclear fission generates electricity without
+burning fossil fuels, so it produces almost no air pollution or greenhouse gases. The main
+concern is radioactive waste management.</p>
+</div>
+<!-- Biomass Energy -->
+<div class="entry">
+<h3>Biomass Energy</h3>
+<p><strong>Statement:</strong> Burning biomass does not release carbon dioxide because
+it is a natural fuel.</p>
+<p><strong>Logical Proposition:</strong> If a fuel is natural, then burning it does not release
+carbon dioxide.</p>
+<p><strong>P and Q:</strong> P = fuel is natural, Q = burning releases carbon dioxide</p>
+<p><strong>Truth Value:</strong> False</p>
+<p><strong>Scientific Explanation:</strong> Biomass such as wood and crop waste releases
+CO2 when burned. Plants can regrow and reabsorb some CO2, but it is not carbon-free.</p>
+</div>
+<!-- Tidal Energy -->
+<div class="entry">
+<h3>Tidal Energy</h3>
+<p><strong>Statement:</strong> Tidal energy can generate electricity at any time, regardless
+of the movement of tides.</p>
+<p><strong>Logical Proposition:</strong> If tidal energy is used, then electricity can be
+generated anytime.</p>
+<p><strong>P and Q:</strong> P = tidal energy is used, Q = electricity can be generated
+anytime</p>
+<p><strong>Truth Value:</strong> False</p>
+<p><strong>Scientific Explanation:</strong> Tidal power comes from ocean rise and fall
+caused by the moon and sun. Electricity is generated only when water moves in or out.</p>
+</div>
+<!-- Biofuels -->
+<div class="entry">
+<h3>Biofuels</h3>
+<p><strong>Statement:</strong> Using biofuels does not release greenhouse gases, so it is
+completely environmentally friendly.</p>
+<p><strong>Logical Proposition:</strong> If biofuels are used, then no greenhouse gases
+are released.</p>
+<p><strong>P and Q:</strong> P = biofuels are used, Q = greenhouse gases are
+released</p>
+<p><strong>Truth Value:</strong> False</p>
+<p><strong>Scientific Explanation:</strong> Biofuels like ethanol and biodiesel release CO2
+when burned. The carbon comes from plants that recently absorbed CO2, so it’s less harmful
+than fossil fuels but not zero emissions.</p>
+</div>
+<!-- Fossil Fuels -->
+<div class="entry">
+<h3>Fossil Fuels</h3>
+<p><strong>Statement:</strong> The emissions of fossil fuels are much cleaner than other
+energy sources.</p>
+<p><strong>Logical Proposition:</strong> If fossil fuels are burned, then emissions are clean
+for the environment.</p>
+<p><strong>P and Q:</strong> P = fossil fuels are burned, Q = emissions are clean for the
+environment</p>
+<p><strong>Truth Value:</strong> False</p>
+<p><strong>Scientific Explanation:</strong> Burning coal, oil, and gas releases CO2 that
+contributes to global warming. Fossil fuels are non-renewable and polluting.</p>
+</div>
+</section>
+<section id="reflection">
+<h2>Group Reflection</h2>
+<p>We learned that many common beliefs about energy are misconceptions. This project
+taught us how logic and science work together to find the truth, and emphasized the importance
+of renewable energy and the risks of fossil fuels.</p>
+</section>
+<section id="video">
+<h2>Video Presentation</h2>
+<iframe src="YOUR_VIDEO_EMBED_URL_HERE" allowfullscreen></iframe>
+</section>
+<section id="download">
+<h2>Download Full Compilation</h2>
+<a href="UI-FB1-HEALTH11-2_Group1_Compilation.pdf" class="download-btn" download>Download
+PDF</a>
+</section>
+<section id="sources">
+<h2>Sources</h2>
+<ul>
+<li>supremesolarpower.com</li>
+<li>energy.gov</li>
+<li>solarnplus.com</li>
+<li>energysage.com</li>
+<li>energy.gov/wind-turbines</li>
+<li>energy.gov/hydropower</li>
+<li>energy.gov/geothermal</li>
+<li>world-nuclear.org</li>
+<li>eia.gov/biomass</li>
+<li>noaa.gov/tides</li>
+<li>energy.gov/biofuels</li>
+<li>clientearth.org</li>
+<li>un.org</li>
+</ul>
+</section>
+<footer>
+<p>© 2025 HEALTH 11-2 | Group 1</p>
+</footer>
+</body>
+</html>
