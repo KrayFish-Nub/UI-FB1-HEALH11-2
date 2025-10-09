@@ -3,37 +3,155 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Energy Facts & Misconceptions</title>
+<title>PERFORMANCE TASK BY GROUP 1 | STEM HEALTH 11-2</title>
 <style>
-/* General Styles yey */
+/* General Page Setup */
 body {
-  font-family: 'Verdana', sans-serif;
+  font-family: "Poppins", sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #c1d7b0;
+  background: #f2f8f3;
   color: #333;
   text-align: center;
+  overflow-x: hidden;
 }
-/* Header yey */
+
+/* Header Design with Background Photo */
 header {
-  padding: 60px 20px 30px 20px;
-  background-color: #a3c48b;
-  color: #fff;
+  background-image: url('https://images.unsplash.com/photo-1527689368864-3a821dbccc34?auto=format&fit=crop&w=1600&q=80');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 100px 20px;
+  position: relative;
+  overflow: hidden;
 }
-h1 {
+header::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 60, 0, 0.55);
+  z-index: 1;
+}
+header * {
+  position: relative;
+  z-index: 2;
+}
+
+/* Title */
+header h1 {
   font-size: 2.5rem;
-  margin-bottom: 10px;
-  animation: fadeIn 2s ease forwards;
+  margin-bottom: 5px;
 }
-/* Fade-in animation */
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(-20px); }
-  to { opacity: 1; transform: translateY(0); }
+header h3 {
+  font-weight: normal;
+  margin-top: 0;
+  letter-spacing: 1px;
 }
-/* Navigation Bar */
+
+/* Horizontal Sliding Text */
+.sliding-text {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+  margin-top: 20px;
+}
+.sliding-text span {
+  display: inline-block;
+  padding: 0 30px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  animation: slideRight 9s linear infinite;
+}
+@keyframes slideRight {
+  0% { transform: translateX(-100%); }
+  50% { transform: translateX(0%); }
+  100% { transform: translateX(100%); }
+}
+
+/* Navigation Buttons */
 nav {
-  display: flex;
-  justify-content: center;
+  margin-top: 35px;
+}
+nav a {
+  display: inline-block;
+  text-decoration: none;
+  background: #7db46c;
+  color: white;
+  padding: 15px 35px;
+  border-radius: 30px;
+  margin: 10px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+nav a:hover {
+  background: #5e944e;
+  transform: scale(1.05);
+}
+
+/* Section Content */
+section {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 35px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+  animation: fadeIn 1.5s ease;
+}
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(20px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+
+/* Footer */
+footer {
+  background: #7db46c;
+  color: white;
+  padding: 15px;
+  margin-top: 40px;
+  font-size: 0.9rem;
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>PERFORMANCE TASK BY GROUP 1</h1>
+  <h3>STEM HEALTH 11-2</h3>
+
+  <div class="sliding-text">
+    <span>General Mathematics 🌿</span>
+    <span>Earth Science 🌍</span>
+    <span>Pre-Calculus 📐</span>
+  </div>
+
+  <p>Integrating Logic, Science, and Innovation through STEM Learning</p>
+
+  <nav>
+    <a href="genmath.html">General Mathematics</a>
+    <a href="earthscience.html">Earth Science</a>
+    <a href="precal.html">Pre-Calculus</a>
+  </nav>
+</header>
+
+<section>
+  <h2>Welcome to Our STEM Performance Task Website</h2>
+  <p>This website was created by <strong>Group 1 of STEM Health 11-2</strong> to present our integrated performance tasks in 
+  <b>General Mathematics</b>, <b>Pre-Calculus</b>, and <b>Earth Science</b>. Each page highlights creative outputs, 
+  video presentations, and reflections showing the connection between logic, reasoning, and scientific understanding.</p>
+</section>
+
+<footer>
+  <p>© 2025 Group 1 | STEM HEALTH 11-2</p>
+</footer>
+
+</body>
+</html>
   gap: 15px;
   flex-wrap: wrap;
   background-color: #9bbc7a;
@@ -285,5 +403,6 @@ a.download-btn:hover, button:hover {
 
 </body>
 </html>
+
 
 
