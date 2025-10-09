@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pre-Calculus</title>
+<style>
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background-color: #e7f0fa;
+  color: #2c3e50;
+  text-align: center;
+}
+
+/* HEADER */
+header {
+  background-color: #4a90e2;
+  color: white;
+  padding: 50px 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+header h1 {
+  font-size: 45px;
+  animation: fadeIn 2s ease-in-out;
+}
+header p {
+  font-size: 18px;
+  opacity: 0.9;
+}
+
+/* ANIMATION */
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(-20px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+
+/* SECTION */
+section {
+  max-width: 850px;
+  margin: 40px auto;
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  text-align: left;
+}
+
+/* SLIDER */
+.slider-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  border-radius: 12px;
+  margin: 20px 0;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.slider img {
+  width: 100%;
+  border-radius: 12px;
+  flex-shrink: 0;
+}
+
+/* BUTTON */
+button {
+  background-color: #4a90e2;
+  color: #fff;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+button:hover {
+  background-color: #3b7ac2;
+  transform: scale(1.05);
+}
+
+/* VIDEO */
+iframe {
+  width: 100%;
+  height: 400px;
+  border-radius: 10px;
+  margin-top: 15px;
+  border: none;
+}
+
+/* QUESTIONS */
+h3 {
+  color: #3469b1;
+}
+.question {
+  background-color: #e9f2fc;
+  border-left: 6px solid #4a90e2;
+  border-radius: 8px;
+  padding: 12px;
+  margin: 10px 0;
+}
+
+/* FOOTER */
+footer {
+  background-color: #4a90e2;
+  color: white;
+  padding: 15px;
+  margin-top: 30px;
+  font-size: 14px;
+}
+
+/* TOUCH SLIDER */
+</style>
+</head>
+<body>
+
+<header>
+  <h1>📘 Pre-Calculus</h1>
+  <p>Exploring Math Behind Energy through Conic Applications</p>
+</header>
+
+<section>
+  <h2>Mini Windmill Project</h2>
+  <p>Our Pre-Calculus project focuses on how conic sections are used in designing a mini windmill. These shapes help balance the structure, guide airflow, and improve the energy conversion process. This project connects geometry, measurement, and design to create something useful for clean energy generation.</p>
+
+  <!-- Video Section -->
+  <iframe src="https://www.youtube.com/embed/0ACPoL3P6RE?rel=0" title="Pre-Calculus Windmill Project"></iframe>
+
+  <!-- Image Slider -->
+  <div class="slider-container">
+    <div class="slider" id="slider">
+      <img src="precal1.jpg" alt="Documentation 1">
+      <img src="precal2.jpg" alt="Documentation 2">
+      <img src="precal3.jpg" alt="Documentation 3">
+      <img src="precal4.jpg" alt="Documentation 4">
+      <img src="precal5.jpg" alt="Documentation 5">
+      <img src="precal6.jpg" alt="Documentation 6">
+      <img src="precal7.jpg" alt="Documentation 7">
+      <img src="precal8.jpg" alt="Documentation 8">
+    </div>
+  </div>
+
+  <h3>Guide Questions & Answers</h3>
+
+  <div class="question"><b>Question 1:</b> How did conic sections influence your design?<br>
+  → We used parabolic blades to catch more wind, a circular path for smoother rotation, and an elliptical base for balance. These shapes made our windmill more stable and efficient.</div>
+
+  <div class="question"><b>Question 2:</b> What challenges did you face in applying math?<br>
+  → It was a bit tricky to measure and cut the curved parts accurately, so we solved it by sketching the shapes first and checking every measurement carefully.</div>
+
+  <div class="question"><b>Question 3:</b> How does your model show the link between math and science?<br>
+  → Math helps us with precision in design, while science explains how wind turns into energy. Combining both helped us build a working model that really produces electricity.</div>
+
+  <div style="text-align:center; margin-top: 20px;">
+    <a href="index.html"><button>Back to Homepage</button></a>
+  </div>
+</section>
+
+<footer>
+  <p>© 2025 HEALTH 11-2 | Group 1 – Pre-Calculus Project</p>
+</footer>
+
+<script>
+// Simple touch slider
+const slider = document.getElementById('slider');
+let startX = 0;
+let scrollLeft = 0;
+
+slider.addEventListener('touchstart', (e) => {
+  startX = e.touches[0].pageX - slider.offsetLeft;
+  scrollLeft = slider.scrollLeft;
+});
+
+slider.addEventListener('touchmove', (e) => {
+  e.preventDefault();
+  const x = e.touches[0].pageX - slider.offsetLeft;
+  const walk = (x - startX) * 1.5;
+  slider.scrollLeft = scrollLeft - walk;
+});
+</script>
+
+</body>
+</html>
+
